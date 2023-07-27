@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>linkDoc</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">link<span>Doc.</span></a>
+      <div class="navbar-nav">
+        <a href="index.html">Beranda</a>
+        <a href="consultation.html">Konsultasi</a>
+        <a href="about.html">Tentang Dokter</a>
+      </div>
+      <div class="nav-extra">
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <main>
+      <div class="forms">
+        <h2>Formulir Konsultasi</h2>
+        <form id="consultationForm">
+          <label for="name">Nama:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="symptoms">Gejala:</label>
+          <textarea id="symptoms" name="symptoms" required></textarea>
+          <input type="submit" value="Kirim Konsultasi" />
+        </form>
+      </div>
+    </main>
+    <aside class="sidebar">
+      <div class="close-sidebar">
+        <a href="#" id="close-sidebar-button"><i data-feather="x"></i></a>
+      </div>
+      <div class="sidebar-content">
+        <a href="index.html">Beranda</a>
+        <a href="consultation.html">Konsultasi</a>
+        <a href="about.html">Tentang Dokter</a>
+      </div>
+    </aside>
+    <footer>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="consultation.html">Konsultasi</a>
+        <a href="about.html">Tentang Dokter</a>
+      </div>
+      <div class="credit">
+        <p>Hak Cipta © 2023 linkDoc</p>
+      </div>
+    </footer>
+    <script>
+      feather.replace();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
